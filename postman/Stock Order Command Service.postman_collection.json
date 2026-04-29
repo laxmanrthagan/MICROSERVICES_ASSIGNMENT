@@ -1,0 +1,46 @@
+{
+	"id": "283d6ab0-af48-2eec-38cb-61fe73f70544",
+	"name": "Stock Order Command Service",
+	"description": "",
+	"order": [
+		"5da2318b-b486-ea91-6448-d800f946395c"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1617596704755,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "5da2318b-b486-ea91-6448-d800f946395c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8888/api/orders",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "283d6ab0-af48-2eec-38cb-61fe73f70544",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8888/api/orders",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617596705972,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"orderId\": \"2\",\r\n  \"orderType\": \"Buy\",\r\n  \"pricePerShareLimit\": 10,\r\n  \"stockName\": \"Apple\",\r\n  \"stockSymbol\": \"APPL\"\r\n}"
+		}
+	]
+}

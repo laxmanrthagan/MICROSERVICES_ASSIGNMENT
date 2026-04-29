@@ -1,0 +1,178 @@
+{
+	"id": "5b3d2587-1867-d223-dedb-5ee5f462414e",
+	"name": "Stock Exchange Service",
+	"description": "",
+	"order": [
+		"de71eb9c-af67-d659-7985-c1adcf4b861e",
+		"9081f570-70af-d647-b855-40ce8735d81f",
+		"a0f7d162-243d-7692-be18-308c72097f1c",
+		"91229502-57d9-1f58-14c7-2349e228dcb6",
+		"f275162b-7dde-fa1f-46af-1825293b874c"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1617596103861,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "9081f570-70af-d647-b855-40ce8735d81f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8484/stock-exchange/stock/buy",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "5b3d2587-1867-d223-dedb-5ee5f462414e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8484/stock-exchange/stock/buy",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617596171529,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"numberOfShares\": 10,\r\n  \"stockName\": \"Apple\",\r\n  \"stockSymbol\": \"APPL\"\r\n}"
+		},
+		{
+			"id": "91229502-57d9-1f58-14c7-2349e228dcb6",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJMYXhtYW4iLCJleHAiOjE2MTc2MTQwODgsImlhdCI6MTYxNzU5NjA4OH0.RopGJ1L3rbwZy-3SZH4VQxv5xOQePiTU3BckLyBhtRFwbMnVTRMkQGQx9bYVvhzaxOPE3fhIkMkz3BP6Sp3P3Q\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJMYXhtYW4iLCJleHAiOjE2MTc2MTQwODgsImlhdCI6MTYxNzU5NjA4OH0.RopGJ1L3rbwZy-3SZH4VQxv5xOQePiTU3BckLyBhtRFwbMnVTRMkQGQx9bYVvhzaxOPE3fhIkMkz3BP6Sp3P3Q",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8484/stock-exchange/stocks",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5b3d2587-1867-d223-dedb-5ee5f462414e",
+			"data": null,
+			"dataMode": "params",
+			"name": "localhost:8484/stock-exchange/stocks",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617596277003,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a0f7d162-243d-7692-be18-308c72097f1c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8484/stock-exchange/stock/sell",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "5b3d2587-1867-d223-dedb-5ee5f462414e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8484/stock-exchange/stock/sell",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617596221938,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"numberOfShares\": 4,\r\n  \"stockName\": \"Apple\",\r\n  \"stockSymbol\": \"APPL\"\r\n}"
+		},
+		{
+			"id": "de71eb9c-af67-d659-7985-c1adcf4b861e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8484/authenticate",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "5b3d2587-1867-d223-dedb-5ee5f462414e",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8484/authenticate",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617596105019,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\n\t\"username\":\"Laxman\",\n\t\"password\":\"nagarro\"\n}"
+		},
+		{
+			"id": "f275162b-7dde-fa1f-46af-1825293b874c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8484/stock-exchange/stocks/non-secure",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5b3d2587-1867-d223-dedb-5ee5f462414e",
+			"data": null,
+			"dataMode": "params",
+			"name": "localhost:8484/stock-exchange/stocks/non-secure",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617596302655,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

@@ -1,0 +1,108 @@
+{
+	"id": "5d057ff3-49f8-0546-20a5-64ba33523c7b",
+	"name": "ACH Transfer Service",
+	"description": "",
+	"order": [
+		"a519bb65-352b-8c02-c680-57ba7006727e",
+		"661a3aad-d9a6-3915-856a-749fe6e6adaf",
+		"b7d32d39-a962-25fd-5847-274a77cc7230"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1617586513890,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "661a3aad-d9a6-3915-856a-749fe6e6adaf",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8585/ach-transfer/bank/deposit",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "5d057ff3-49f8-0546-20a5-64ba33523c7b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8585/ach-transfer/bank/deposit",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617586839528,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"accountHolderName\": \"Laxman Thagan\",\r\n  \"amountToDeposit\": 50,\r\n  \"bankAccountNumber\": 2,\r\n  \"bankName\": \"BOA\"\r\n}"
+		},
+		{
+			"id": "a519bb65-352b-8c02-c680-57ba7006727e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8585/authenticate",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1617586531825,
+			"name": "http://localhost:8080/authenticate",
+			"description": "",
+			"collectionId": "5d057ff3-49f8-0546-20a5-64ba33523c7b",
+			"responses": [],
+			"rawModeData": "{\n\"username\":\"Laxman\",\n\"password\":\"nagarro\"\n}"
+		},
+		{
+			"id": "b7d32d39-a962-25fd-5847-274a77cc7230",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8585/ach-transfer/bank/withdraw",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "5d057ff3-49f8-0546-20a5-64ba33523c7b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8585/ach-transfer/bank/withdraw",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617586936156,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"accountHolderName\": \"Laxman Thagan\",\r\n  \"amountToWithdraw\": 30,\r\n  \"bankAccountNumber\": 2,\r\n  \"bankName\": \"BOA\"\r\n}"
+		}
+	]
+}

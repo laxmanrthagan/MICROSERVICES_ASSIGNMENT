@@ -1,0 +1,107 @@
+version: "3.4"
+services:
+ eureka-server:
+  image: laxmanrthagan/eureka-service-discovery:1.0
+  ports:
+   - "6060:6060"
+
+ bank-account-service:
+  image: laxmanrthagan/bank-account-service:1.0
+  ports:
+   - "8181:8181"
+  environment: 
+    EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:6060/eureka
+  links:
+   - eureka-server
+  depends_on:
+   - eureka-server
+
+ trading-account-service:
+  image: laxmanrthagan/trading-account-service:1.0
+  ports:
+   - "8282:8282"
+  environment: 
+    EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:6060/eureka
+  links:
+   - eureka-server
+  depends_on:
+   - eureka-server
+   
+ stock-exchange-service:
+  image: laxmanrthagan/stock-exchange-service:1.0
+  ports:
+   - "8484:8484"
+  environment: 
+    EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:6060/eureka
+  links:
+   - eureka-server
+  depends_on:
+   - eureka-server
+   
+ notification-service:
+  image: laxmanrthagan/notification-service:1.0
+  ports:
+   - "8383:8383"
+  environment: 
+    EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:6060/eureka
+  links:
+   - eureka-server
+  depends_on:
+   - eureka-server
+      
+ ach-transfer-service:
+  image: laxmanrthagan/ach-transfer-service:1.0
+  ports:
+   - "8585:8585"
+  environment: 
+    EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:6060/eureka
+  links:
+   - eureka-server
+  depends_on:
+   - eureka-server
+  
+ cloud-api-gateway:
+  image: laxmanrthagan/cloud-api-gateway:1.0
+  ports:
+   - "8080:8080"
+  environment: 
+    EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:6060/eureka
+  links:
+   - eureka-server
+  depends_on:
+   - eureka-server
+   
+ buy-sell-stock-service:
+  image: laxmanrthagan/buy-sell-stock-service:1.0
+  ports:
+   - "8787:8787"
+  environment: 
+    EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:6060/eureka
+  links:
+   - eureka-server
+  depends_on:
+   - eureka-server   
+   
+ stock-order-command-service:
+  image: laxmanrthagan/stock-order-command-service:1.0
+  ports:
+   - "8888:8888"
+  environment: 
+    EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:6060/eureka
+  links:
+   - eureka-server
+  depends_on:
+   - eureka-server
+   
+ stock-trigger-service:
+  image: laxmanrthagan/stock-trigger-service:1.0
+  ports:
+   - "8989:8989"
+  environment: 
+    EUREKA_CLIENT_SERVICEURL_DEFAULTZONE: http://eureka-server:6060/eureka
+  links:
+   - eureka-server
+  depends_on:
+   - eureka-server
+
+  

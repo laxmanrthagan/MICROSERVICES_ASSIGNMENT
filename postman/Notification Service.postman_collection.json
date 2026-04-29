@@ -1,0 +1,46 @@
+{
+	"id": "6dbe493f-8f02-c506-9111-70dffc8bab2f",
+	"name": "Notification Service",
+	"description": "",
+	"order": [
+		"849e70f2-bb8a-8bf7-ef3c-3f99a880b6c8"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1617596011190,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "849e70f2-bb8a-8bf7-ef3c-3f99a880b6c8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8383/notification/sendEmail",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "6dbe493f-8f02-c506-9111-70dffc8bab2f",
+			"data": [],
+			"dataMode": "raw",
+			"name": "localhost:8383/notification/sendEmail",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617596012321,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"notificationType\": \"BANK DEPOSIT\"\r\n}"
+		}
+	]
+}

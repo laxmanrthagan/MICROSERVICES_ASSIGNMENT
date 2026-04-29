@@ -1,0 +1,214 @@
+{
+	"id": "f7ccdc36-dce1-a38f-423c-d5dcff23f5cf",
+	"name": "Bank Account Service",
+	"description": "",
+	"order": [
+		"fec489ce-414d-a5d6-b991-0751e8fb75ff",
+		"5fbba41b-0323-422f-c507-0926e9053ed9",
+		"96195845-1ddd-8ec0-e614-c01d9562a11e",
+		"c50a8ec9-3732-0686-dac5-2a8084191c38",
+		"78af9bfe-5064-0fe2-5ebf-38ec49ae3095",
+		"392a9230-6227-d2ac-38a4-d4e823f4961d"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1617587084778,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "392a9230-6227-d2ac-38a4-d4e823f4961d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8181/bank/accounts/non-secure",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f7ccdc36-dce1-a38f-423c-d5dcff23f5cf",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8181/bank/accounts/non-secure",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617593085241,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "5fbba41b-0323-422f-c507-0926e9053ed9",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJMYXhtYW4iLCJleHAiOjE2MTc2MDY0MjEsImlhdCI6MTYxNzU4ODQyMX0.fPAQnolIUriS99y1g69HU_yOAwrpdjQl7SXXpGV3cBaofW128ZAgQ_FbiuOaynLK0ceJDknO0lDTAfng5v1RAw\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJMYXhtYW4iLCJleHAiOjE2MTc2MDY0MjEsImlhdCI6MTYxNzU4ODQyMX0.fPAQnolIUriS99y1g69HU_yOAwrpdjQl7SXXpGV3cBaofW128ZAgQ_FbiuOaynLK0ceJDknO0lDTAfng5v1RAw",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8181/bank/account/add-update",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1617592985220,
+			"name": "http://localhost:8181/bank/account/add-update",
+			"description": "",
+			"collectionId": "f7ccdc36-dce1-a38f-423c-d5dcff23f5cf",
+			"responses": [],
+			"rawModeData": "{\r\n  \"accountNumber\": 6,\r\n  \"accountOpenedTs\": \"2021-04-05T01:37:20.400Z\",\r\n  \"accountStatus\": \"ACTIVE\",\r\n  \"accountType\": \"CHECKING\",\r\n  \"balanceAmount\": 100,\r\n  \"customer\": {\r\n    \"customerAddress\": \"7873 Echo Springs Rd\",\r\n    \"customerEmail\": \"laxman.thagan@nagarro.com\",\r\n    \"customerId\": 1,\r\n    \"customerName\": \"Laxman Thagan\",\r\n    \"customerType\": \"Individual\",\r\n    \"password\": \"nagarro\",\r\n    \"userName\": \"Laxman\"\r\n  },\r\n  \"lastUpdatedTs\": \"2021-04-05T01:37:20.400Z\",\r\n  \"remarks\": \"Nothing\"\r\n}"
+		},
+		{
+			"id": "78af9bfe-5064-0fe2-5ebf-38ec49ae3095",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJMYXhtYW4iLCJleHAiOjE2MTc2MTA5NzksImlhdCI6MTYxNzU5Mjk3OX0.tqdXfsnyEntqYFTdHZ67D67Y_-OJ6G0dmCDpnklKr4UWMpdzeHjIhPCYGwaBuc9AvYt-7jf64GFCfpOHl5wGjg\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJMYXhtYW4iLCJleHAiOjE2MTc2MTA5NzksImlhdCI6MTYxNzU5Mjk3OX0.tqdXfsnyEntqYFTdHZ67D67Y_-OJ6G0dmCDpnklKr4UWMpdzeHjIhPCYGwaBuc9AvYt-7jf64GFCfpOHl5wGjg",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8181/bank/accounts",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "f7ccdc36-dce1-a38f-423c-d5dcff23f5cf",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8181/bank/accounts",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617593049976,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "96195845-1ddd-8ec0-e614-c01d9562a11e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8181/bank/account/deposit",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "f7ccdc36-dce1-a38f-423c-d5dcff23f5cf",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8181/bank/account/deposit",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617592902479,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"accountHolderName\": \"Laxman Thagan\",\r\n  \"accountNumber\": 2,\r\n  \"amountToDeposit\": 20\r\n}"
+		},
+		{
+			"id": "c50a8ec9-3732-0686-dac5-2a8084191c38",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8181/bank/account/withdraw",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "f7ccdc36-dce1-a38f-423c-d5dcff23f5cf",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8181/bank/account/withdraw",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617592959694,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"accountHolderName\": \"Laxman Thagan\",\r\n  \"accountNumber\": 2,\r\n  \"amountToWithdraw\": 50\r\n}"
+		},
+		{
+			"id": "fec489ce-414d-a5d6-b991-0751e8fb75ff",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8181/authenticate",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "f7ccdc36-dce1-a38f-423c-d5dcff23f5cf",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8181/authenticate",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617587087253,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"username\": \"Laxman\",\r\n  \"password\": \"nagarro\"\r\n}"
+		}
+	]
+}

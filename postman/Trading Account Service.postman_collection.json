@@ -1,0 +1,308 @@
+{
+	"id": "60edcb66-0b17-4a43-5caa-fa50e4a0f1b9",
+	"name": "Trading Account Service",
+	"description": "",
+	"order": [
+		"90aa5ffe-d1de-9e30-03a3-79a2747c3369",
+		"08ef7e9d-7ded-4eeb-a472-76e8de5ae90f",
+		"439d926b-4704-f206-79f0-1c485377b610",
+		"062df5ce-4542-b77e-0d2f-30df9e793590",
+		"c8278215-7f90-30c6-e4e9-5bca4dc1a6bb",
+		"36a54812-89e3-038b-2cf8-b5745c5f5c97",
+		"1caa622a-3546-5a3a-8adc-d26c4b235f17",
+		"15866690-f12d-2ec6-de24-4df253ee7911",
+		"7a0e9ae9-bcda-7369-a7cb-695d56820c85"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1617593198617,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "062df5ce-4542-b77e-0d2f-30df9e793590",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJMYXhtYW4iLCJleHAiOjE2MTc2MTM1MDAsImlhdCI6MTYxNzU5NTUwMH0.hbl0qpE7hYtW_0L0F7dYlwuWYoyV_R9jUomeQx4cZ5gP5ANU67OV40KA7xt6dggiX0c1lSfniX-YHwu3LQpa4w\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJMYXhtYW4iLCJleHAiOjE2MTc2MTM1MDAsImlhdCI6MTYxNzU5NTUwMH0.hbl0qpE7hYtW_0L0F7dYlwuWYoyV_R9jUomeQx4cZ5gP5ANU67OV40KA7xt6dggiX0c1lSfniX-YHwu3LQpa4w",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8282/trading/accounts",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "60edcb66-0b17-4a43-5caa-fa50e4a0f1b9",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8282/trading/accounts",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617595545783,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "08ef7e9d-7ded-4eeb-a472-76e8de5ae90f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8282/trading/account/deposit",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "60edcb66-0b17-4a43-5caa-fa50e4a0f1b9",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8282/trading/account/deposit",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617595386717,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"accountHolderName\": \"Laxman Thagan\",\r\n  \"amountToDeposit\": 40,\r\n  \"nameInBankAccount\": \"Laxman Thagan\",\r\n  \"tradingAccountNumber\": 2,\r\n  \"transactionType\": \"DEPOSIT From Bank\",\r\n  \"withdrawalBankAccountNumber\": 2\r\n}"
+		},
+		{
+			"id": "15866690-f12d-2ec6-de24-4df253ee7911",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJMYXhtYW4iLCJleHAiOjE2MTc2MTM1MDAsImlhdCI6MTYxNzU5NTUwMH0.hbl0qpE7hYtW_0L0F7dYlwuWYoyV_R9jUomeQx4cZ5gP5ANU67OV40KA7xt6dggiX0c1lSfniX-YHwu3LQpa4w\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJMYXhtYW4iLCJleHAiOjE2MTc2MTM1MDAsImlhdCI6MTYxNzU5NTUwMH0.hbl0qpE7hYtW_0L0F7dYlwuWYoyV_R9jUomeQx4cZ5gP5ANU67OV40KA7xt6dggiX0c1lSfniX-YHwu3LQpa4w",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8282/trading/stocks",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "60edcb66-0b17-4a43-5caa-fa50e4a0f1b9",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8282/trading/stocks",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617595864302,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "1caa622a-3546-5a3a-8adc-d26c4b235f17",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8282/trading/stock/sell",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "60edcb66-0b17-4a43-5caa-fa50e4a0f1b9",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8282/trading/stock/sell",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617595806750,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"numberOfShares\": 4,\r\n  \"stockName\": \"Apple\",\r\n  \"stockSymbol\": \"APPL\",\r\n  \"traderId\": 1\r\n}"
+		},
+		{
+			"id": "36a54812-89e3-038b-2cf8-b5745c5f5c97",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8282/trading/stock/buy",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "60edcb66-0b17-4a43-5caa-fa50e4a0f1b9",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8282/trading/stock/buy",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617595758382,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"numberOfShares\": 5,\r\n  \"stockName\": \"Apple\",\r\n  \"stockSymbol\": \"APPL\",\r\n  \"traderId\": 1\r\n}"
+		},
+		{
+			"id": "439d926b-4704-f206-79f0-1c485377b610",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8282/trading/account/withdraw",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "60edcb66-0b17-4a43-5caa-fa50e4a0f1b9",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8282/trading/account/withdraw",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617595484661,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n  \"accountHolderName\": \"Laxman Thagan\",\r\n  \"amountToWithdraw\": 20,\r\n  \"depositedBankAccountNumber\": 2,\r\n  \"nameInBankAccount\": \"Laxman Thagan\",\r\n  \"tradingAccountNumber\": 2,\r\n  \"transactionType\": \"Transfer TO BANK\"\r\n}"
+		},
+		{
+			"id": "7a0e9ae9-bcda-7369-a7cb-695d56820c85",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8282/trading/stocks/non-secure",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "60edcb66-0b17-4a43-5caa-fa50e4a0f1b9",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8282/trading/stocks/non-secure",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617595890679,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "90aa5ffe-d1de-9e30-03a3-79a2747c3369",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8282/authenticate",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1617593222218,
+			"name": "http://localhost:8282/authenticate",
+			"description": "",
+			"collectionId": "60edcb66-0b17-4a43-5caa-fa50e4a0f1b9",
+			"responses": [],
+			"rawModeData": "{\r\n  \"username\": \"Laxman\",\r\n  \"password\": \"nagarro\"\r\n}"
+		},
+		{
+			"id": "c8278215-7f90-30c6-e4e9-5bca4dc1a6bb",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8282/trading/accounts/non-secure",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "60edcb66-0b17-4a43-5caa-fa50e4a0f1b9",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8282/trading/accounts/non-secure",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1617595575376,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
